@@ -79,7 +79,9 @@ header h1 {
 .logo {
   padding: 20px;
 }
-
+.list-of-burgers ul {
+	list-style: none;
+}
 footer {
   height: 30px;
   margin: 0;

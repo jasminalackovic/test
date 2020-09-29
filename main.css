@@ -85,7 +85,7 @@ header h1 {
   margin: 0;
   padding: 0;
 }
-.adresse {
+#adresse {
   visibility: hidden;
 }
 .one-burger-card {

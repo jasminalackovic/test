@@ -86,7 +86,7 @@ header h1 {
   padding: 0;
 }
 #adresse {
-  visibility: hidden;
+  display: none;
 }
 .one-burger-card {
   margin: 20px;
@@ -101,4 +101,15 @@ footer {
   margin: 0;
   padding: 0;
   background-color: black;
+}
+
+@media screen and (max-width: 640px) {
+	header {
+    height: 110px;
+  }
+	header a .logo {
+		height: 36px;
+    background: rgba(0,0,0,.65) url(../images/logo.png) no-repeat center center;
+		background-size: 126px 17px;
+	}
 }

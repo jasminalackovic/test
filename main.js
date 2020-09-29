@@ -8,7 +8,8 @@ $(document).ready(function(){
   request.done(function(response) {
       var list = '<ul>';
       for (var i = 0; i < response.length; i++) {
-        list += '<li class="one-burger-card">' + response[i].name + ' <span class="js-adresse"> adresse </span> </li>';
+        if(response[i].burger_classic == 'y') {};
+        list += '<li class="one-burger-card">' + response[i].name + ' Classic Burger   Cheese Burger   <span class="js-adresse"> adresse </span> </li>';
       }
    list += '</ul>';
    $("#list-of-burgers").html(list);
@@ -18,8 +19,8 @@ $(document).ready(function(){
     alert( "Request failed: " + textStatus );
   });
 
-
 });
+
 
 $(document).on('click', '.js-adresse', function () {
     $("#adresse").show();
